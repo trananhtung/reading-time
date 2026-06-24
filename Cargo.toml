@@ -1,0 +1,25 @@
+[package]
+name = "reading-time"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Estimate the reading time of a text (word count + minutes), with CJK support. A faithful port of the reading-time npm package. Zero deps, no_std."
+documentation = "https://docs.rs/reading-time"
+repository = "https://github.com/trananhtung/reading-time"
+homepage = "https://github.com/trananhtung/reading-time"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["reading-time", "words", "wordcount", "text", "estimate"]
+categories = ["text-processing", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
